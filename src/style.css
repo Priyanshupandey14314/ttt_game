@@ -21,6 +21,7 @@ font-size:28px;
   border-radius: 0px;
   cursor: pointer;
   transition: background-color 0.2s;
+  color: black;
 }
 #root button:hover {
   background-color: #ddd;

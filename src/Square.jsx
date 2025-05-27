@@ -1,11 +1,12 @@
 import { useState } from 'react';
-const Square = () => {
-  const [value, setValue] = useState(null);
-  function handleClick(){
-    setValue('X');
-  }
+const Square = ({value, onSquareClick}) => {
+  // const [value, setValue] = useState(null);
+  // When you call a set function in a component, React automatically updates the child components inside too.
+  // function handleClick(){
+  //   setValue('X');
+  // }
   return (
-     <button className="square" onClick={handleClick}>{value}</button>
+     <button className="square" onClick={onSquareClick}>{value}</button>
   )
 }
 export default Square
